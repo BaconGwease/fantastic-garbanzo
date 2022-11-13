@@ -1,0 +1,142 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Kent State E-Sports Survey Form</title>
+   <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body> 
+  <h1 id="title">
+    Kent State E-Sports Survey Form
+  </h1>
+  <p id="description">
+    Thank you for taking the time to complete this survey
+  </p>
+  <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+   <fieldset> 
+    <label id="name-label">Name:
+     <input id="name" type="text" placeholder="Enter your name" required />
+    </label>
+    <label id="email-label">Email:
+     <input id="email" type="email" placeholder="Enter your email" required />
+    </label>
+    <label id="number-label">Age (Optional): 
+     <input id="number" type="number" min="12" max="120" placeholder="Age" required />
+    </label>
+    <label>Which option best describes your current role?
+      <select id="dropdown">
+       <option value="">(Select best option)</option>
+       <option value="student">Student</option>
+       <option value="faculty">Faculty</option>
+       <option value="other">Other</option>
+      </select>  
+    </label>
+  </fieldset>  
+  <fieldset>
+    <label> Did you know Kent State has an Esports program? 
+    <label for="MC">
+      <input class="inline" type="radio" value="yes" name="MC"> Yes
+    </label>
+    <label for="MC"> 
+      <input class="inline" type="radio" value="no" name="MC"> No
+    </label>
+    <label for="MC">
+      <input class="inline" type="radio" value="I do now!" name="MC"> I do now!
+    </label>
+    </label>
+  </fieldset>
+  <fieldset>
+    <label>What games do you currently play? (Check all that apply)
+    </label>   
+      <div><input class="inline" type="checkbox" value="League Of Legends"> League Of Legends </div>
+      <div><input class="inline" type="checkbox" value="Valorant"> Valorant </div>
+      <div><input class="inline" type="checkbox" value="Minecraft"> Minecraft </div>
+      <div><input class="inline" type="checkbox" value="None of the above"> None of the above </div>
+  </fieldset>
+  <fieldset>
+    <label>Any comments or suggestions?
+     <textarea placeholder="Enter your comment here..." rows="3" cols="30"></textarea>  
+    </label>
+   <input id="submit" type="submit" value="Submit" />           
+ </form>
+ </body>      
+</html>  
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 1em;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+** end of undefined **
+
